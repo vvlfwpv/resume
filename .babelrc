@@ -1,0 +1,23 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@Resume": "./src/resume/",
+          "@Shared": "./src/shared/",
+          "@Admin": "./src/admin/",
+          "@Server": "./server"
+        }
+      }
+    ],
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ]
+  ]
+}
